@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dia dos Namorados</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="javascript/script.js">
+</head>
+<body>
+
+    <div class="painel">
+        <h1>Feliz Dia dos Namorados</h1>
+
+        <br>
+
+
+        <img src="Img/ursinho-fofo-apaixonado.gif" alt="">
+
+        <h3>Aceita namorar comigo?</h3>
+
+        <br><br>
+
+        <button id="sim" onclick="aceitar()">Sim </button>
+        <button onmouseover="fuja()" id="nao">Não </button>
+
+
+
+
+    </div>
+
+    <script>
+        function fuja() {
+    var botaoNao = document.getElementById("nao");
+
+    var larguraJanela = window.innerWidth;
+    var alturaJanela = window.innerHeight;
+
+    var maxX = larguraJanela - botaoNao.offsetWidth;
+    var maxY = alturaJanela - botaoNao.offsetHeight;
+
+    var aleatorioX = Math.floor(Math.random() * maxX);
+    var aleatorioY = Math.floor(Math.random()* maxY);
+
+    botaoNao.style.left = aleatorioX + "px";
+    botaoNao.style.top = aleatorioY + "px";
+
+
+}
+
+function aceitar() {
+    alert("Farei o melhor para te fazer feliz!!")
+}
+
+
+
+    </script>
+
+
+    
+</body>
+</html>
