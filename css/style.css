@@ -40,6 +40,38 @@
     cursor: pointer;
 }
 
+@media screen and (max-width: 800px) {
+    .painel {
+        width: 330px;
+        height: 500px;
+        margin:5% auto;
+        padding-top: 25px;
+        border-radius: 10px;
+    }
+    
+    img {
+        max-height:100%;
+        max-width:100%;
+    }
+
+    h3 {
+        font-size: 22px;
+        margin-top: 5%;
+    }
+
+    #sim{
+        height: 50px;
+        width: 80px;
+        margin-left: -80px;
+    }
+
+    #nao {
+        height: 50px;
+        width: 80px;
+        margin-left: 5px;
+    }
+}
+
 body {
     background-color: rgb(255, 172, 174);
 }
