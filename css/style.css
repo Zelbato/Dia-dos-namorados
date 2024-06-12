@@ -40,6 +40,10 @@
     cursor: pointer;
 }
 
+input {
+    display: none;
+}
+
 @media screen and (max-width: 800px) {
     .painel {
         width: 330px;

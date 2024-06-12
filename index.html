@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dia dos Namorados</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="javascript/script.js">
+    <link href="https://cdn.jsdelivr.net/npm/emoji.css@3.0.1@/emoji.min.css" rel="stylesheet"/>
 </head>
+
 <body>
 
     <div class="painel">
@@ -31,30 +34,32 @@
 
     <script>
         function fuja() {
-    var botaoNao = document.getElementById("nao");
+            var botaoNao = document.getElementById("nao");
 
-    var larguraJanela = window.innerWidth;
-    var alturaJanela = window.innerHeight;
+            var larguraJanela = window.innerWidth;
+            var alturaJanela = window.innerHeight;
 
-    var maxX = larguraJanela - botaoNao.offsetWidth;
-    var maxY = alturaJanela - botaoNao.offsetHeight;
+            var maxX = larguraJanela - botaoNao.offsetWidth;
+            var maxY = alturaJanela - botaoNao.offsetHeight;
 
-    var aleatorioX = Math.floor(Math.random() * maxX);
-    var aleatorioY = Math.floor(Math.random()* maxY);
+            var aleatorioX = Math.floor(Math.random() * maxX);
+            var aleatorioY = Math.floor(Math.random() * maxY);
 
-    botaoNao.style.left = aleatorioX + "px";
-    botaoNao.style.top = aleatorioY + "px";
+            botaoNao.style.left = aleatorioX + "px";
+            botaoNao.style.top = aleatorioY + "px";
 
 
-}
+        }
 
-function aceitar() {
-    alert("Me chama de previsão do tempo e diz que tá rolando um clima.")
-}
+        function aceitar() {
 
+            alert("Você aceitou 😊, clique em OK para receber a mensagem!");
+            alert("Me chama de previsão do tempo e diz que tá rolando um clima.")
+
+        }
     </script>
 
 
-    
+
 </body>
 </html>
