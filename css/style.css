@@ -18,7 +18,7 @@
 
     height: 40px;
     width: 60px;
-    background-color: rgb(254, 117, 119);
+    background-color: rgb(255, 67, 70);
     border: 2px solid white;
     border-radius: 10px;
     color: white;
@@ -32,7 +32,7 @@
     position: absolute;
     height: 40px;
     width: 60px;
-    background-color: rgb(254, 117, 119);
+    background-color: rgb(255, 67, 70);
     border:2px solid white;
     border-radius: 10px;
     color: white;
@@ -40,8 +40,10 @@
     cursor: pointer;
 }
 
-input {
-    display: none;
+img {
+    width: 60%;
+    height: 50%;
+    margin: 20px auto;
 }
 
 @media screen and (max-width: 800px) {
@@ -77,5 +79,5 @@ input {
 }
 
 body {
-    background-color: rgb(255, 172, 174);
+    background-color: rgb(255, 67, 70);
 }
